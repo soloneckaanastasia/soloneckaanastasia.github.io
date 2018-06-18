@@ -1,0 +1,80 @@
+.slider-wrapper {
+    background-color: transparent;
+    padding: 0;
+}
+
+.carousel  {
+    padding: 0;
+}
+
+
+.carousel-control-prev,
+.carousel-control-next {
+
+    max-width: 48px;
+    max-height: 48px;
+    top: 50%;
+    margin-top: -24px;
+}
+
+.carousel-item {
+    background-size: cover;
+    background-position: center top;
+	min-height: 80vh;
+}
+
+#slider .item1 {
+    background-image:url("../img/slider-min.jpg");
+}
+
+#slider .item2 {
+    background-image: url("../img/slider2-min.jpg");
+}
+
+#slider .item3 {
+    background-image: url("../img/slider3-min.jpg");
+}
+
+#slider .item4 {
+    background-image: url("../img/slider4-min.jpg");
+}
+
+.imag a {
+    display: flex;
+} 
+.text {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    color: #fff;
+}
+
+.slidein {
+    animation-duration: 1.5s;
+    animation-name: slidein;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+	animation-delay: 0.25s;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+/* Для екранів шириною менше 767px */
+
+/* мінімальна висота слайдера      */
+
+/* рівну висоті viewport 100vh     */
+
+@media screen and (max-width:767px) {
+
+}

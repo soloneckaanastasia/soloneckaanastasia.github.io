@@ -1,0 +1,292 @@
+body,
+html {
+	width: 100%;
+	height: 100%;
+}
+
+.container,
+.navbar {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+/* Плавні зміни властивостей лінків */
+
+a {
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	transition: all 0.2s;
+}
+
+/*************************************/
+
+/* Зміни CSS коду розпочинати звідси */
+
+/*************************************/
+
+.introduction {
+	display: flex;
+	font-family: 'PT Sans', sans-serif;
+	color: #484759;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.text {
+	font-family: 'PT Sans', sans-serif;
+	font-style: normal;
+}
+
+.text h2 {
+	margin-top: 40px;
+}
+
+h2 {
+	font-family: 'PT Sans', sans-serif;
+	font-size: 36px;
+	text-align: center;
+	
+}
+
+#slider h2 {
+	color: white;
+}
+
+h3 {
+	font-family: 'PT Sans', sans-serif;
+	font-size: 18px;
+	text-align: center;
+	color: #484759;
+}
+
+h4 {
+	font-family: 'PT Sans', sans-serif;
+	font-size: 16px;
+	color: #484759;
+}
+
+h5 {
+	font-family: 'PT Sans', sans-serif;
+	font-size: 14px;
+	color: #484759;
+}
+
+p {
+	font-size: 20px;
+	font-family: 'PT Sans';
+	color: #484759;
+}
+
+.line {
+	position: relative;
+	background-image: url("../img/line.png");
+	background-repeat:repeat-x;
+	background-position: center;
+}
+
+header .row {
+	min-height: 100vh;
+}
+
+#s1 {
+	margin: 60px 0 45px;
+	
+}
+
+#s2,
+#s3,
+#s4 {
+	min-height: 100vh;
+	/* !!! Тимчасово для відладки !!! Висота секцій рівна висоті екрану */
+	padding: 50px 0;
+	/* Внітрішні відступи зверху та знизу у секціях <section> */
+}
+
+.name {
+	font-family: 'Old Standard TT', serif;
+}
+
+.about {
+	font-family: 'PT Sans', sans-serif;
+}
+
+header,
+#s2,
+#s4 {
+	background-color: #999;
+	/* Колір фону для секцій #s2, #s4 */
+}
+
+
+
+.photo {
+	position: absolute;
+	left: 50%;
+	margin-left:-75px;
+	top: -35px;
+	z-index: 100;
+}
+
+.round {
+	border-radius: 20px;
+}
+
+.block1 {
+	position: relative;
+	background-color: white;
+	padding-bottom: 30px;
+	-webkit-box-shadow: 0px 0px 25px 0px #cabcb1;
+	-moz-box-shadow: 0px 0px 25px 0px #cabcb1;
+	box-shadow: 0px 0px 25px 0px #cabcb1;
+}
+
+.name {
+	padding-right: 30px;
+	padding-left: 30px;
+	padding-top: 150px;
+	text-align: center;
+	font-size: 20px;
+	color: black;
+}
+
+.about {
+	padding: 30px;
+	text-align: center;
+	font-size: 15px;
+	color: grey;
+}
+
+.button {
+	background-color: antiquewhite;
+	width: 100px;
+	align-content: center;
+	text-align: center;
+	margin-left: 150px;
+	margin-right: 150px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.btn {
+	background-color: antiquewhite;
+	color: black;
+	position: absolute;
+	left: 35%;
+
+
+}
+
+
+
+
+.block2 {
+	padding: 0;
+}
+
+.img {
+	width: 600px;
+	height: 720px;
+}
+
+.flexbox {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.section-heading {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.write {
+	margin-bottom: -10px;
+}
+
+.linebottom {
+	width: 3%;
+	height: 3px;
+	margin-bottom: 50px;
+	background: #E8DCD3;
+}
+
+.section-heading {
+	text-align: center;
+	position: relative;
+	float: left;
+	margin-left: 17%;
+	width: 66.66666667%;
+	font-family: 'PT Sans', sans-serif;
+
+}
+
+
+.btn-default {
+	background-color: #E8DCD3;
+}
+
+.form-control-white {
+	background: color: #E8DCD3;
+
+}
+
+#s3 {
+	min-height: inherit;
+	padding: 50px 0;
+}
+
+#s4 {
+	min-height: 30px;
+	background: #E8DCD3;
+	padding: 20px 0 0;
+}
+
+.follow {
+	font-family: 'PT Sans', sans-serif;
+	background: white;
+	text-align: center;
+	height: 30px;
+}
+
+.icons {
+	background-color: #E8DCD3;
+	text-align: center;
+	width: 100%;
+	text-decoration: none;
+	padding: 30px 0;
+}
+
+.icons a {
+	text-decoration: none;
+	margin-right: 15px;
+}
+
+
+
+
+/**************************************/
+
+/* Зміна властивостей для breakpoints */
+
+/**************************************/
+
+@media screen and (max-width:575px) {
+	.container,
+	.navbar {
+		padding-left: 15px;
+		/* Для Small додати відступи */
+		padding-right: 15px;
+		/* зліва та справа у .container та .navbar */
+	}
+
+
+	/* Приклад зміни відступів зверху, знизу для секцій на Small екранах */
+	section {
+		padding: 25px 0;
+	}
+
+}
